@@ -20,14 +20,6 @@
   status: pass
 
 - summary: |
-     Проверка работы фильтра по бренду
-  status: pass
-
-- summary: |
-     Проверка работы фильтра по цене
-  status: pass
-
-- summary: |
      Проверка работы фильтра по наличию
   status: fail
 
