@@ -18,7 +18,7 @@ test-cases:
 
 - summary: |
      Проверка работы фильтра по цене
-  status: pass
+  status: fail
 
 - summary: |
      Проверка работы фильтра по наличию
