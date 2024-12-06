@@ -27,7 +27,7 @@
      Проверка просмотра подробной информации по товару
   status: pass
 
-- summary: |
+ - summary: |
      Проверка добавления товара в корзину
   status: pass
 
@@ -36,13 +36,19 @@
   status: pass
 
 - summary: |
-     Проверка смены языка магазина
-  status: pass
-  
-- summary: |
      Проверка удаления товара из корзины
   status: pass
 
 - summary: |
      Проверка оформления заказа
   status: fail
+
+- summary: |
+     Проверка смены языка магазина
+  status: pass
+
+- summary: |
+    Проверка очистки корзины
+status: pass
+
+
