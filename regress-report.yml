@@ -127,7 +127,17 @@ bugreports:
       1. На стартовой старинце установить категорию. Например, groceries
     expected-result: |
       Можно перейти на следующую страницу с товарами при нажатии на кнопку Next
+
+- summary: |
+      Фильтр по цене выбирает товары с учетом цены без скидки
+    environment: |
+      Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
+      ОС Win 10 x64
+    steps-to-reproduce: |
+      1. На стартовой старинце установить фильтр по цене от 9 до 10
+    expected-result: |
+      Список из 3-х товаров (Dog Food, Essence Mascara Lash Princess, Chicken Meat)
     actual-result: |
-      Исчезла кнопка Next для перехода на следующую страницу
+      В списке товаров отсутсвует Dog Food
 
   
