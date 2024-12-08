@@ -84,3 +84,15 @@
     Окно "Order placed successfully" закроется
   actual-result: |
      Окно "Order placed successfully" не закрывается
+
+- summary: |
+    Фильтр по цене учитывает цену товара до скидки 
+  environment: |
+    Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
+    ОС Win 10 x64
+  steps-to-reproduce: |
+    1. Установить фильтр по цене от 10 до 20$
+  expected-result: |
+    Сформируется список товаров актуальная цена которых от 10 до 20$
+  actual-result: |
+     В список попадает товар с ценой 9,00$ (до скидки товар стоил 10,99$) 
