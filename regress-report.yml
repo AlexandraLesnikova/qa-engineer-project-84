@@ -7,43 +7,43 @@ test-cases:
   - summary: |
      Проверка работы поиска по ключевому слову
   status: pass
-
+  
   - summary: |
      Проверка работы поиска по категории
   status: pass
-
+  
   - summary: |
      Проверка работы фильтра по бренду
   status: pass
-
+  
   - summary: |
      Проверка работы фильтра по цене
   status: pass
-
+  
   - summary: |
      Проверка работы фильтра по наличию
   status: fail
-
+  
   - summary: |
      Проверка просмотра подробной информации по товару
   status: pass
-
+  
   - summary: |
      Проверка добавления товара в корзину
   status: pass
-
+  
   - summary: |
      Проверка просмотра содержимого корзины
   status: pass
-
+  
   - summary: |
      Проверка удаления товара из корзины
   status: pass
-
+  
   - summary: |
      Проверка оформления заказа
   status: fail
-
+  
   - summary: |
      Проверка смены языка магазина
   status: pass
@@ -51,27 +51,27 @@ test-cases:
   - summary: |
      Проверка очистки корзины
   status: pass
-
+  
   - summary: |
        Установить пустую категорию
   status: pass
-
+  
   - summary: |
        Проверка работы кнопки Hexlet Store в header
   status: pass
-
+  
   - summary: |
        Проверка списка категории
   status: fail
-
+  
   - summary: |
        Проверка работы фильтра после нажатия на кнопку "Назад" браузера
   status: fail
-
+  
   - summary: |
        Проверка работы кнопки закрыть Х в окне оформления заказа
   status: fail
-
+  
 bugreports:
 - summary: |
       Не работают фильтры после смены категории на пустое значение
