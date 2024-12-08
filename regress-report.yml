@@ -75,16 +75,16 @@ test-cases:
 bugreports:
 - summary: |
       Не работают фильтры после смены категории на пустое значение
-  environment: |
+environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
-  steps-to-reproduce: |
+steps-to-reproduce: |
       1. Выбрать любую категорию, например groceries. Отобразится список товаров категории groceries
       2. В списке Category установить пустое значение. Отобразится весь список товаров
       3. Установить фильтр Brand. Наример, Gucci
-  expected-result: |
+expected-result: |
       Отобразится список товаров бренда Gucci
-  actual-result: |
+actual-result: |
       Отображается список всех товаров
 
 - summary: |
