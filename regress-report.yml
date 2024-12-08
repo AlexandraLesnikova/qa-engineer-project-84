@@ -18,7 +18,7 @@ test-cases:
 
 - summary: |
      Проверка работы фильтра по цене
-  status: fail
+  status: pass
 
 - summary: |
      Проверка работы фильтра по наличию
@@ -61,7 +61,7 @@ test-cases:
   status: pass
 
 - summary: |
-       Проверка значений в списке категории
+       Проверка списка категории
   status: fail
 
 - summary: |
@@ -73,20 +73,6 @@ test-cases:
   status: fail
 
 bugreports:
-- summary: |
-      Не работают фильтры после смены категории на пустое значение
-    environment: |
-      Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
-      ОС Win 10 x64
-    steps-to-reproduce: |
-      1. Выбрать любую категорию, например groceries. Отобразится список товаров категории groceries
-      2. В списке Category установить пустое значение. Отобразится весь список товаров
-      3. Установить фильтр Brand. Наример, Gucci
-    expected-result: |
-      Отобразится список товаров бренда Gucci
-    actual-result: |
-      Отображается список всех товаров
-
 - summary: |
       Не работают фильтры после смены категории на пустое значение
     environment: |
@@ -119,7 +105,7 @@ bugreports:
       В DevTools ошибка 204 при выполении авторизации
 
 - summary: |
-      Удаляется кнопка Next
+      Удаляется кнопка Next при установленном фильтре
     environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
@@ -127,17 +113,3 @@ bugreports:
       1. На стартовой старинце установить категорию. Например, groceries
     expected-result: |
       Можно перейти на следующую страницу с товарами при нажатии на кнопку Next
-
-- summary: |
-      Фильтр по цене выбирает товары с учетом цены без скидки
-    environment: |
-      Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
-      ОС Win 10 x64
-    steps-to-reproduce: |
-      1. На стартовой старинце установить фильтр по цене от 9 до 10
-    expected-result: |
-      Список из 3-х товаров (Dog Food, Essence Mascara Lash Princess, Chicken Meat)
-    actual-result: |
-      В списке товаров отсутсвует Dog Food
-
-  
