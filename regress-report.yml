@@ -75,58 +75,58 @@ test-cases:
 bugreports:
 - summary: |
       Не работают фильтры после смены категории на пустое значение
-    environment: |
+  environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Выбрать любую категорию, например groceries. Отобразится список товаров категории groceries
       2. В списке Category установить пустое значение. Отобразится весь список товаров
       3. Установить фильтр Brand. Наример, Gucci
-    expected-result: |
+  expected-result: |
       Отобразится список товаров бренда Gucci
-    actual-result: |
+  actual-result: |
       Отображается список всех товаров
 
 - summary: |
       Ошибка при регистарции
-    environment: |
+  environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. Открыть DevTools, Network 
       2. На странице магазина нажать на тулбар Log in to interact
       3. Нажать "Don't have an account? Sign Up"
       4. В поле Your Name внести значение, например Mary
       5. Далле нажать кнопку Continue
       6. В DevTools ошибка 204 при выполении авторизации 
-    expected-result: |
+  expected-result: |
       Авторизация в интернет магазине
-    actual-result: |
+  actual-result: |
       В DevTools ошибка 204 при выполении авторизации
 
 - summary: |
       Удаляется кнопка Next при установленном фильтре
-    environment: |
+  environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. На стартовой старинце установить категорию. Например, groceries
-    expected-result: |
+  expected-result: |
       Можно перейти на следующую страницу с товарами при нажатии на кнопку Next
-    actual-result: |
+  actual-result: |
       Кнопка Next исчезла со страницы
 
 - summary: |
       При перезагрузке страницы в корзину "возвращаются" все товары которые были очищены из корзины
-    environment: |
+  environment: |
       Google Chrome  130.0.6723.70 (Официальная сборка) (64 бит)
       ОС Win 10 x64
-    steps-to-reproduce: |
+  steps-to-reproduce: |
       1. В корзину добавлены товары
       2. В корзине нажать на кнопку Clear cart
       3. Нажать на кнопку Continue shopping
       4. Обновить старницу кнопка Refresh браузера
-    expected-result: |
+  expected-result: |
       В корзине не будет товаров после перезагрузки страницы
-    actual-result: |
+  actual-result: |
       После перезагрузки страницы в корзине появляются все товары, которые были в ней до очистки
