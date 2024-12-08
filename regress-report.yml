@@ -4,71 +4,71 @@ test-cases:
        Проверка мобильной версии интернет-магазина
     status: pass
   
-- summary: |
+  - summary: |
      Проверка работы поиска по ключевому слову
   status: pass
 
-- summary: |
+  - summary: |
      Проверка работы поиска по категории
   status: pass
 
-- summary: |
+  - summary: |
      Проверка работы фильтра по бренду
   status: pass
 
-- summary: |
+  - summary: |
      Проверка работы фильтра по цене
   status: pass
 
-- summary: |
+  - summary: |
      Проверка работы фильтра по наличию
   status: fail
 
-- summary: |
+  - summary: |
      Проверка просмотра подробной информации по товару
   status: pass
 
-- summary: |
+  - summary: |
      Проверка добавления товара в корзину
   status: pass
 
-- summary: |
+  - summary: |
      Проверка просмотра содержимого корзины
   status: pass
 
-- summary: |
+  - summary: |
      Проверка удаления товара из корзины
   status: pass
 
-- summary: |
+  - summary: |
      Проверка оформления заказа
   status: fail
 
-- summary: |
+  - summary: |
      Проверка смены языка магазина
   status: pass
   
-- summary: |
+  - summary: |
      Проверка очистки корзины
   status: pass
 
-- summary: |
+  - summary: |
        Установить пустую категорию
   status: pass
 
-- summary: |
+  - summary: |
        Проверка работы кнопки Hexlet Store в header
   status: pass
 
-- summary: |
+  - summary: |
        Проверка списка категории
   status: fail
 
-- summary: |
+  - summary: |
        Проверка работы фильтра после нажатия на кнопку "Назад" браузера
   status: fail
 
-- summary: |
+  - summary: |
        Проверка работы кнопки закрыть Х в окне оформления заказа
   status: fail
 
